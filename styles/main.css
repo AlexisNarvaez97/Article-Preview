@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1rem = 10px (62.5/100)*16 = 10px */
+}
+
+body {
+  background-color: #ecf2f8;
+  font-family: "Manrope", sans-serif;
+  color: #48556a;
+  font-weight: 300;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+img {
+  display: block;
+  border-style: none;
+  max-width: 100%;
+}
+
+.article__preview {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 730px;
+  height: 280px;
+  /* Pendiente */
+  -webkit-box-shadow: -3px 2px 23px -7px rgba(0, 0, 0, 0.25);
+          box-shadow: -3px 2px 23px -7px rgba(0, 0, 0, 0.25);
+}
+
+.article__preview__img {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  width: 285px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.article__preview .info__preview {
+  padding: 40px;
+}
+
+.article__preview .info__preview-h1 {
+  color: #48556a;
+  line-height: 1.5;
+}
+
+.article__preview .info__preview-p {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #6d7f97;
+}
+
+.article__preview .info__preview .info__persona {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 22px;
+}
+
+.article__preview .info__preview .info__persona__img {
+  width: 40px;
+  border-radius: 100px;
+  margin-right: 15px;
+}
+
+.article__preview .info__preview .info__persona__text {
+  margin-right: auto;
+}
+/*# sourceMappingURL=main.css.map */
