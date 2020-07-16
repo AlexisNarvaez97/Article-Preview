@@ -36,6 +36,13 @@ body {
           align-items: center;
 }
 
+@media only screen and (max-width: 780px) {
+  body {
+    margin: 0 2rem 0 2rem;
+    overflow: hidden;
+  }
+}
+
 img {
   display: block;
   border-style: none;
@@ -59,6 +66,17 @@ img {
           box-shadow: -3px 2px 23px -7px rgba(0, 0, 0, 0.25);
 }
 
+@media only screen and (max-width: 780px) {
+  .article__preview {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 542px;
+  }
+}
+
 .article__preview__img {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
@@ -72,20 +90,42 @@ img {
           filter: brightness(105%);
 }
 
+@media only screen and (max-width: 780px) {
+  .article__preview__img {
+    width: 100%;
+    height: 220px;
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+
 .article__preview .info__preview {
   padding: 40px;
 }
 
 .article__preview .info__preview-h1 {
   color: #48556a;
+  font-size: 2rem;
   line-height: 1.5;
+}
+
+@media only screen and (max-width: 780px) {
+  .article__preview .info__preview-h1 {
+    font-size: 1.6rem;
+  }
 }
 
 .article__preview .info__preview-p {
   margin-top: 10px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #6d7f97;
+}
+
+@media only screen and (max-width: 780px) {
+  .article__preview .info__preview-p {
+    font-size: 1.34rem;
+  }
 }
 
 .article__preview .info__preview .info__persona {
@@ -109,5 +149,35 @@ img {
 
 .article__preview .info__preview .info__persona__text {
   margin-right: auto;
+}
+
+.article__preview .info__preview .info__persona__text p {
+  color: #48556a;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.article__preview .info__preview .info__persona__text small {
+  font-size: 1.03rem;
+  color: #9eafc2;
+}
+
+.article__preview .info__preview .info__persona .info__share {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #ecf2f8;
+}
+
+.article__preview .info__preview .info__persona .info__share-icon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.attribution {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=main.css.map */
